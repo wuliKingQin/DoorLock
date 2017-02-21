@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white">
+        <ImageView
+            android:id="@+id/iv_gesture_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/ic_blue_back"/>
+        <TextView
+            android:id="@+id/tv_gesture_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textColor="#3F9DF5"
+            android:text="@string/gesture_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_draw_pass_hint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/gesture_draw_pass_hint"/>
+        <FrameLayout
+            android:id="@+id/fl_gesture_container"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" >
+        </FrameLayout>
+        <CheckBox
+            android:id="@+id/chb_gesture_open_lock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:button="@null"
+            android:text="@string/gesture_open_lock_hint"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:paddingRight="10dp"
+            android:checked="true"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"
+            android:drawableRight="@drawable/selector_setting_fingerprint"
+            android:background="@color/gesture_color3"/>
+    </LinearLayout>
+</LinearLayout>

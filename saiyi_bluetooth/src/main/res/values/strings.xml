@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bluetooth</string>
+    <string name="bluetooth_scanner_fail_hint">初始化蓝牙失败</string>
+    <string name="bluetooth_scanner_support_hint">手机不支持蓝牙</string>
+    <string name="bluetooth_control_connecting_hint">蓝牙正在连接中，……</string>
+    <string name="bluetooth_control_fail_hint">蓝牙连接失败</string>
+    <string name="bluetooth_control_disconnect_hint">蓝牙断开连接</string>
+</resources>

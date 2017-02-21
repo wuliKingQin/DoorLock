@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/tv_bluetooth_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/color5"
+        android:gravity="center"
+        android:text="@string/bluetooth_search_hint" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/color5"
+        android:gravity="center"
+        android:text="@string/bluetooth_device_hint" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/iv_bluetooth_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_bluetooth"/>
+        <ImageView
+            android:id="@+id/tv_bluetooth_progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_progress"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_bluetooth_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/color10"
+        android:gravity="center"
+        android:text="@string/bluetooth_cancel_bind" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/color14"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bluetooth_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

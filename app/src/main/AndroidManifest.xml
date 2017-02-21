@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.saiyi.doorlock">
+
+    <!--指纹识别权限-->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <!--上网权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--联系人权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--照相机二维码需要的权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <!--加速传感器权限-->
+    <uses-permission android:name="android.hardware.sensor.accelerometer"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".CoreApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <!--蒲光英bug测试-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="2bc6b051bbfb7b7ef5364935e1e325a2" >
+        </meta-data>
+
+        <activity
+            android:name=".activity.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登录界面-->
+        <activity android:name=".activity.LoginActivity"/>
+        <!--注册界面-->
+        <activity android:name=".activity.RegisterActivity"/>
+        <!--重设密码界面-->
+        <activity android:name=".activity.ResetPassActivity"/>
+        <!--主要界面-->
+        <activity android:name=".activity.MainActivity"/>
+        <!--添加设备界面-->
+        <activity android:name=".activity.AddDeviceActivity"/>
+        <!--wifi绑定界面-->
+        <activity android:name=".activity.WifiBindActivity"/>
+        <!--连接设备界面-->
+        <activity android:name=".activity.DeviceConnectActivity"/>
+        <!--设备控制界面-->
+        <activity android:name=".activity.DeviceControlActivity"/>
+        <!--相关设置界面-->
+        <activity android:name=".activity.CorrelationSettingActivity"/>
+        <!--一次性密码界面-->
+        <activity android:name=".activity.OnePassActivity"/>
+        <!--输入信息界面-->
+        <activity android:name=".activity.InputInfoActivity"/>
+        <!--添加分享人的界面-->
+        <activity android:name=".activity.AddressBookActivity"/>
+        <!--权限管理界面-->
+        <activity android:name=".activity.AuthorityMgrActivity"/>
+        <!--时间密码界面-->
+        <activity android:name=".activity.AgingPassActivity"/>
+        <!--日期选择界面-->
+        <activity android:name=".activity.DateSelectedActivity"/>
+        <!--时间选择界面-->
+        <activity android:name=".activity.TimeSelectedActivity"/>
+        <!--远程开锁界面-->
+        <activity android:name=".activity.DistanceOpenLockActivity"/>
+        <!--开锁记录界面-->
+        <activity android:name=".activity.OpenLockRecordActivity"/>
+        <!--扫二维码界面-->
+        <activity android:name=".activity.TwoCodeActivity"/>
+        <!--系统头像界面-->
+        <activity android:name=".activity.SystemPhotoActivity"/>
+        <!--意见反馈界面-->
+        <activity android:name=".activity.OpinionActivity"/>
+        <!--修改信息界面-->
+        <activity android:name=".activity.ModifyActivity"/>
+        <!--关于界面-->
+        <activity android:name=".activity.AboutActivity"/>
+        <!--帮助界面-->
+        <activity android:name=".activity.HelperActivity"/>
+        <!--摇一摇开锁界面-->
+        <activity android:name=".activity.BluetoothSharkActivity"/>
+        <!--蓝牙添加设备界面-->
+
+        <!--注册接收web socket的广播消息-->
+        <receiver android:name=".broadcast.WebSocketBroadcast">
+            <intent-filter>
+                <action android:name="com.robot.socket.msg"/>
+                <action android:name="com.robot.socket.open"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

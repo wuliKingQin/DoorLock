@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/color14"/>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.saiyi.framework.view.CircleImageView
+            android:id="@+id/civ_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_head_1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_authority_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="--"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/civ_head"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_manager"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView4"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color14"/>
+    <TextView
+        android:id="@+id/tv_authority_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/color11"
+        android:text="@string/authority_no_data_hint" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ryv_authority_share_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</LinearLayout>

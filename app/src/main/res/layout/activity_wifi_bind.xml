@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/color14"/>
+    <RelativeLayout
+        android:id="@+id/rl_select_net_hint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/tv_net_hint1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="连接WLAN"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/tv_net_hint2"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_device_icon"/>
+        <TextView
+            android:id="@+id/tv_net_hint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择一个可用WIFI,让你的设备接入网络"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <EditText
+            android:id="@+id/edt_wifi_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_input_color"
+            android:hint="请选择WIFI"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edt_wifi_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_input_color"
+            android:hint="请输入密码"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btn_connect_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="连接"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selector_login_bg_color" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':saiyi_framework', ':saiyi_gesture', ':saiyi_fingerprint', ':saiyi_bluetooth', ':saiyi_socket'

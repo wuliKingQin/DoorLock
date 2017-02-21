@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/color7">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_one_pass_control"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:textColor="@color/color7"
+                android:text="@string/one_pass_create_time" />
+
+            <TextView
+                android:id="@+id/tv_show_create_time"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/color7"
+                android:text="2016-8-23"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@color/color9">
+
+            <TextView
+                android:id="@+id/tv_create_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:text="@string/one_pass_create_pass" />
+
+            <TextView
+                android:id="@+id/tv_show_create_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberPassword"
+                android:textColor="@android:color/black"
+                android:text="999999" />
+
+            <CheckBox
+                android:id="@+id/ckb_look_pass"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/ic_look_pass"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="@color/color1"
+        android:text="@string/one_pass_user_hint"
+        android:id="@+id/textView" />
+</LinearLayout>

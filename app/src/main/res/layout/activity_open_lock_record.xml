@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color14"/>
+    <TextView
+        android:id="@+id/tv_open_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/open_lock_no_record_hint" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_open_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GesturePass</string>
+    <string name="gesture_open_lock_hint">手势解锁</string>
+    <string name="gesture_draw_pass_hint">绘制解锁App手势</string>
+    <string name="gesture_title">添加手势密码</string>
+    <string name="verify_forget_pass">忘记手势？</string>
+    <string name="verify_pass_hint">请使用录入的手势解锁</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <EditText
+        android:id="@+id/edt_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:hint="输入您宝贵的意见或建议……"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/shape_input_color"/>
+</LinearLayout>

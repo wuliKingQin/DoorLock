@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="system_photo">
+        <item>ic_head_1</item>
+        <item>ic_head_2</item>
+        <item>ic_head_3</item>
+        <item>ic_head_4</item>
+        <item>ic_head_5</item>
+        <item>ic_head_6</item>
+        <item>ic_head_7</item>
+        <item>ic_head_8</item>
+        <item>ic_head_9</item>
+        <item>ic_head_10</item>
+        <item>ic_head_11</item>
+        <item>ic_head_12</item>
+        <item>ic_head_13</item>
+        <item>ic_head_14</item>
+        <item>ic_head_15</item>
+        <item>ic_head_16</item>
+    </string-array>
+</resources>

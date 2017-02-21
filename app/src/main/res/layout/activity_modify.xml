@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color9"/>
+    <EditText
+        android:id="@+id/edt_modify_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/color1"
+        android:background="@drawable/shape_input_color"/>
+</LinearLayout>

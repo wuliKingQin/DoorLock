@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color7">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_shark_control"
+            android:id="@+id/iv_bluetooth_shark_lock" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="25sp"
+        android:textColor="@color/color10"
+        android:gravity="center"
+        android:text="@string/bluetooth_shark_lock" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <TextView
+            android:id="@+id/tv_bluetooth_lock"
+            android:layout_width="0dp"
+            android:layout_weight="1.45"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/color1"
+            android:gravity="center_vertical|right"
+            android:text="@string/bluetooth_lock_state_hint" />
+        <TextView
+            android:id="@+id/tv_bluetooth_lock_state"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/color1"
+            android:gravity="center_vertical"
+            android:text="@string/bluetooth_lock_state" />
+    </LinearLayout>
+</LinearLayout>

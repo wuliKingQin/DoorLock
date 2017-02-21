@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color14"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableRight="@drawable/selector_setting_fingerprint"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:button="@null"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color3"
+        android:text="@string/correlation_setting_none_people"
+        android:id="@+id/cb_correlation_none_people" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color14"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableRight="@mipmap/ic_right_arrows"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/correlation_setting_look_pass"
+        android:id="@+id/tv_setting_look_pass" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color14"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/color14"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+        <cn.saiyi.doorlock.view.CircleStaticProgressView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/cp_connect_progress"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="@string/connect_progress_hint"
+            android:textColor="@color/color13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="@string/connect_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_connect_hint"
+            android:textColor="@color/color4"/>
+        <TextView
+            android:text="@string/connect_hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_connect_hint2"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color5"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="16sp"
+        android:text="@string/connect_cancel_hint"
+        android:textColor="@android:color/white"
+        android:background="@drawable/selector_login_bg_color"
+        android:id="@+id/btn_connect_cancel" />
+</LinearLayout>

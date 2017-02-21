@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center_horizontal|bottom"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="@string/verify_pass_hint"/>
+    <FrameLayout
+        android:id="@+id/fl_gesture_verify_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+        <TextView
+            android:id="@+id/tv_gesture_forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/verify_forget_pass"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_marginBottom="20dp"
+            android:checked="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

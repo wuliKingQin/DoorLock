@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/tv_bluetooth_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color7"/>
+    <Button
+        android:id="@+id/btn_bluetooth_add"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_login_bg_color"
+        android:layout_alignParentRight="true"
+        android:text="@string/bluetooth_add_device" />
+    <View
+        android:id="@+id/v_ble_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color14"/>
+</RelativeLayout>

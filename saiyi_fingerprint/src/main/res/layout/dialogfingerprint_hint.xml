@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/shape_fingerprint_bg"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:background="@mipmap/ic_fingerprint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_fingerprint_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="使用手机已经录入的指纹"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_fingerprint_cancel"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

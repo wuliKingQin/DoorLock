@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">宝柏门锁</string>
+
+    <!--设备界面相关字符资源-->
+    <string name="device_title">设备</string>
+    <string name="device_no_bind_title">未绑定智能设备</string>
+    <string name="device_bind_title">已绑定智能设备</string>
+
+    <!--商城界面相关字符资源-->
+    <string name="mall_title">商城</string>
+
+    <!--设置界面相关字符资源-->
+    <string name="setting_title">设置</string>
+    <string name="setting_fingerprint_switch">将指纹用于开锁</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_helper">使用帮助</string>
+    <string name="setting_app_update">app更新检测</string>
+
+    <!--用户界面相关字符资源-->
+    <string name="user_title">用户</string>
+    <string name="user_exit">退出登录</string>
+    <string name="user_account_hint">账号:</string>
+    <string name="user_change_head_icon">更换头像</string>
+    <string name="user_name">名字</string>
+    <string name="user_address">地址</string>
+    <string name="user_contact">联系方式</string>
+    <string name="user_modify_pass">修改密码</string>
+    <string name="user_exit_title">提示</string>
+    <string name="user_exit_hint">确定要退出登录嘛？</string>
+
+    <!--控制界面-->
+    <string name="control_title">门锁</string>
+    <string name="control_add_gesture_pass">添加手势密码</string>
+    <string name="control_one_pass">一次性密码</string>
+    <string name="control_long_distance">远程开锁</string>
+    <string name="control_shark">摇一摇开锁</string>
+    <string name="control_record">开锁记录</string>
+    <string name="control_aging_pass">时效密码</string>
+    <string name="control_setting">相关设置</string>
+    <string name="control_open_lock_record">开锁记录</string>
+    <string name="tv_control_lock_state_hint">未开</string>
+    <string name="tv_control_lock_state_str">锁状态</string>
+    <string name="tv_control_authority_mgr">权限管理</string>
+
+    <!--主界面字符信息-->
+    <string name="device_back_exit">再按一次退出应用</string>
+
+    <!--添加设备界面相关字符串资源-->
+    <string name="add_device_title">添加设备</string>
+    <string name="device_connect_title">设备连接</string>
+
+    <!--登录界面相关字符串资源-->
+    <string name="login_title">登录</string>
+    <string name="login_fail_hint">登录失败</string>
+    <string name="login_success_hint">登录成功</string>
+    <string name="login_register">手机快速注册</string>
+    <string name="login_forget_pass">忘记密码</string>
+    <string name="login_button">登录</string>
+    <string name="login_account_hint">用户名</string>
+    <string name="login_password_hint">用户密码</string>
+    <string name="register_title">注册</string>
+    <string name="reset_title">重设密码</string>
+    <string name="register_account_hint">请输入手机号</string>
+    <string name="register_password_hint">请输入密码</string>
+    <string name="register_again_pass_hint">请再次输入密码</string>
+    <string name="register_verify_hint">请输入验证码</string>
+    <string name="register_gain_verify_hint">获取短信验证码</string>
+    <string name="register_button_hint">注册</string>
+    <string name="register_progress_hint">正在注册中，……</string>
+    <string name="reset_account_hint">账号：请输入您绑定的手机号</string>
+    <string name="reset_pass_hint">新密码：请输入您的密码</string>
+    <string name="reset_pass_progress_hint">正在修改中，……</string>
+
+    <!--连接设备界面相关字符串-->
+    <string name="connect_hint">正在连接WLAN</string>
+    <string name="connect_hint2">设备正在连接，请不要断开网络。</string>
+
+    <!--相关设置界面-->
+    <string name="correlation_setting_false_lock_alarm">假锁报警</string>
+    <string name="correlation_setting_pry_alarm">防撬报警</string>
+    <string name="correlation_setting_none_people">无人模式</string>
+    <string name="correlation_setting_look_pass">查看管理员密码</string>
+    <string name="one_pass_user_hint">提示：一次性密码只能使用一次，\n使用后系统自动销毁。</string>
+    <string name="one_pass_create_time">生成时间:\t</string>
+    <string name="one_pass_create_pass">密码：</string>
+
+    <!--开锁记录-->
+    <string name="record_title">开锁记录</string>
+    <string name="address_book_title">通讯录</string>
+
+    <!--权限管理-->
+    <string name="mgr_title">权限管理</string>
+    <string name="authority_turn_over_device">移交设备</string>
+    <string name="authority_delete">删除</string>
+    <string name="authority_no_data_hint">点击右上角，添加需要分享的人</string>
+
+    <!--失效密码-->
+    <string name="aging_pass_date_hint">10月15日 18:00</string>
+    <string name="aging_pass_time_hint">10月16日 19:06</string>
+    <string name="aging_pass_password_hint">输入8位有效密码</string>
+    <string name="aging_pass_create">生成</string>
+    <string name="aging_pass_cancel">取消</string>
+    <string name="distance_lock_state">未激活</string>
+    <string name="distance_refuse_hint">拒绝</string>
+    <string name="distance_open_lock">开锁</string>
+    <string name="distance_cafe_hint">提示：使用远程开锁，请确认对方身份,\n以免给您造成不必要的损失。</string>
+    <string name="open_lock_no_record_hint">你还没有任何开锁记录</string>
+    <string name="connect_cancel_hint">取消</string>
+    <string name="connect_progress_hint">0%</string>
+
+    <!--二维码扫描-->
+    <string name="two_code_title">二维码扫描</string>
+    <string name="two_code_right">相册</string>
+    <string name="two_code_hint">将二维码放在框内,即可扫描</string>
+    <string name="system_title">系统头像</string>
+    <string name="opinion_title">意见反馈</string>
+    <string name="aging_start_date">开始日期</string>
+    <string name="aging_end_date">结束日期</string>
+    <string name="dialog_hint">提示</string>
+    <string name="fingerprint_error">指纹不正确</string>
+
+    <!--蓝牙相关-->
+    <string name="bluetooth_title">设备添加</string>
+    <string name="bluetooth_search_hint">正在搜索,请打开设备</string>
+    <string name="bluetooth_device_hint">靠近手机</string>
+    <string name="bluetooth_cancel_bind">取消绑定</string>
+    <string name="bluetooth_add_device">添加</string>
+    <string name="bluetooth_lock_state">关闭</string>
+    <string name="bluetooth_lock_state_hint">开锁状态：</string>
+    <string name="bluetooth_shark_lock">摇一摇开锁</string>
+
+
+
+    <string name="finish">完成</string>
+</resources>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_login_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <TextView
+            android:id="@+id/tv_login_head"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_app"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/login_button"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/selector_login_bg_color"
+            android:layout_below="@+id/ll_input" />
+        <TextView
+            android:id="@+id/tv_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btn_login"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_login_reset_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_forget_pass"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:layout_alignBaseline="@+id/tv_login_register"
+            android:layout_alignBottom="@+id/tv_login_register"
+            android:layout_alignEnd="@+id/btn_login" />
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/shape_input_bg_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp">
+            <EditText
+                android:id="@+id/edt_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/login_account_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_account"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/color11" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/color1"/>
+            <EditText
+                android:id="@+id/edt_login_pass"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/login_password_hint"
+                android:maxLength="20"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_pass"
+                android:textColor="@android:color/black"
+                android:background="@null"
+                android:textColorHint="@color/color11"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

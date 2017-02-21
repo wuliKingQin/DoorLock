@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color13">
+        <ImageView
+            android:id="@+id/iv_distance_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_distance_control"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_distance_lock_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@android:color/white"
+            android:text="@string/distance_lock_state"
+            android:textSize="18sp"
+            android:layout_below="@+id/iv_distance_icon"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:maxLength="8"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/color1"
+            android:background="@drawable/shape_input_color"
+            android:hint="@string/aging_pass_password_hint"
+            android:id="@+id/edt_distance_password" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="@string/distance_refuse_hint"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_input_color"
+                android:textColor="@color/color2"
+                android:id="@+id/btn_distance_refuse" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="@string/distance_open_lock"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_create_pass_bg_color"
+                android:textColor="@android:color/white"
+                android:id="@+id/btn_distance_open_lock" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color1"
+            android:gravity="bottom|center_horizontal"
+            android:padding="50dp"
+            android:id="@+id/textView2"
+            android:text="@string/distance_cafe_hint" />
+    </LinearLayout>
+</LinearLayout>
